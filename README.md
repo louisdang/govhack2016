@@ -1,4 +1,8 @@
 # govhack2016
-GovHack 2016 repository for Team Zubats
+GovHack 2016 repository for SIDES by Team Zubats
 
-Jeremy.
+Dev Team:
+- Anushi Shah
+- Jeremy Arimado
+- Louis Dang
+- Ronnie Lu
