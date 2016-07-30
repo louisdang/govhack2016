@@ -7,7 +7,7 @@ def get_optimal_routes(request):
     	if 'data' not in request.GET:
     		return HttpResponseBadRequest("No input data received")
         received_json_data=json.loads(request.GET['data'])
-        result = utils.get_optimal_routes(received_json_data)
+        result = utils.get_optimal_routes(received_json_data['sources'], received_json_data['destinations'])
         return JsonResponse(result)
     else:
         return HttpResponseBadRequest("Only accepts GET for now")
