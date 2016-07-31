@@ -4,6 +4,7 @@ import json
 import logging
 
 log = logging.getLogger(__name__)
+logging.basicConfig(filename='/home/ec2-user/log')
 
 def get_optimal_routes(request):
 	try:
