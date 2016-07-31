@@ -16,8 +16,8 @@ def get_optimal_routes(request):
 	        log.info(request.POST)
 
 	        result = utils.get_optimal_routes(data['sources'], (data['destinations']))
-	    	return JsonResponse(result)
+	    	return JsonResponse(result, safe=False)
 	    else:
 	        return HttpResponseBadRequest("Only accepts POST for now")
 	except Exception as e:
-		return HttpResponseServerError("Server erro: {}".format(e))
+		return HttpResponseServerError("Server error: {}".format(e))
