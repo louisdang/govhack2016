@@ -9,10 +9,7 @@ logging.basicConfig(filename='/home/ec2-user/log')
 def get_optimal_routes(request):
 	try:
 	    if request.method=='POST':
-	    	data = json.loads(request.body)
-	    	#if 'data' not in request.POST:
-	    		#return HttpResponseBadRequest("No input data received")
-	        #received_json_data=json.loads(request.POST['data'])
+	    	data = json.loads(request.body)	    	
 	        log.info(request.POST)
 
 	        result = utils.get_optimal_routes(data['sources'], (data['destinations']))
