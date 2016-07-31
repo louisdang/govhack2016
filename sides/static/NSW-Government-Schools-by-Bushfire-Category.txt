@@ -1,0 +1,720 @@
+DOE_SCHOOL_CODE	SCHOOL_NAME	RFS_BUSHFIRE_CATEGORY
+1003	Abermain Public School	Category 1
+1030	Alstonville Public School	Buffer
+1040	Anna Bay Public School	Category 1
+1045	Appin Public School	Buffer
+1051	Ardlethan Central School	Category 1
+1066	Ashford Central School	Buffer
+1066	Ashford Central School	Category 1
+1082	Avoca Beach Public School	Category 1
+1084	Awaba Public School	Category 2
+1085	Colo Vale Public School	Category 1
+1111	Ballimore Public School	Category 2
+1130	Baradine Central School	Category 1
+1130	Baradine Central School	Category 2
+1136	Barkers Vale Public School	Category 1
+1138	Barnsley Public School	Category 1
+1149	Batemans Bay Public School	Category 1
+1160	Beckom Public School	Category 1
+1166	Beecroft Public School	Buffer
+1168	Bega Valley Public School	Buffer
+1177	Bellbird Public School	Category 1
+1178	Bellbrook Public School	Category 1
+1181	Bellingen Public School	Buffer
+1182	Belltrees Public School	Category 1
+1196	Ben Lomond Public School	Buffer
+1205	Berowra Public School	Category 1
+1209	Berrima Public School	Category 1
+1217	Bexhill Public School	Buffer
+1224	Bilambil Public School	Buffer
+1227	Ocean Shores Public School	Category 1
+1228	Bilpin Public School	Category 1
+1228	Bilpin Public School	Category 1
+1230	Binalong Public School	Buffer
+1237	Binnaway Central School	Category 2
+1247	Black Hill Public School	Category 1
+1249	Black Mountain Public School	Buffer
+1258	Blaxland Public School	Category 2
+1266	Boambee Public School	Buffer
+1269	Bobin Public School	Category 1
+1271	Bobs Farm Public School	Buffer
+1290	Bonalbo Central School	Category 1
+1290	Bonalbo Central School	Category 2
+1293	Bongongo Public School	Category 1
+1297	Bonville Public School	Category 1
+1303	Booligal Public School	Buffer
+1318	Boree Creek Public School	Category 1
+1336	Bowraville Central School	Category 1
+1340	Braidwood Central School	Category 2
+1341	Branxton Public School	Buffer
+1346	Colo Heights Public School	Category 1
+1360	Bringelly Public School	Category 1
+1363	Brocklesby Public School	Category 2
+1377	Brooklyn Public School	Category 2
+1402	Bulahdelah Central School	Buffer
+1411	Bulli Public School	Buffer
+1414	Bundanoon Public School	Buffer
+1424	Bungwahl Public School	Category 1
+1433	Burnside Public School	Buffer
+1437	Burraga Public School	Category 1
+1449	Burringbar Public School	Category 2
+1453	Burrumbuttock Public School	Category 2
+1460	Buxton Public School	Buffer
+1492	Caniaba Public School	Buffer
+1498	Brisbania Public School	Category 1
+1501	Capertee Public School	Buffer
+1502	Captains Flat Public School	Buffer
+1502	Captains Flat Public School	Category 1
+1515	Carool Public School	Buffer
+1526	Casino Public School	Category 2
+1535	Cattai Public School	Category 1
+1543	Cessnock East Public School	Category 1
+1547	Chandler Public School	Category 1
+1548	The Channon Public School	Category 1
+1551	Pacific Palms Public School	Category 1
+1558	Chillingham Public School	Category 1
+1580	Cobbitty Public School	Category 1
+1583	Coffee Camp Public School	Category 1
+1584	Coffs Harbour Public School	Buffer
+1590	Collector Public School	Category 1
+1604	Comleroy Road Public School	Category 1
+1621	Coolah Central School	Category 1
+1621	Coolah Central School	Category 2
+1621	Coolah Central School	Category 2
+1624	Coolamon Central School	Category 1
+1627	Coolongolook Public School	Category 2
+1630	Coonabarabran Public School	Category 1
+1634	Coorabell Public School	Category 1
+1635	Cooranbong Public School	Category 1
+1644	Coraki Public School	Buffer
+1654	Corindi Public School	Category 1
+1659	Corowa South Public School	Category 1
+1668	Cowan Public School	Category 2
+1674	Crabbes Creek Public School	Category 1
+1674	Crabbes Creek Public School	Category 2
+1681	Crescent Head Public School	Category 1
+1685	Crossmaglen Public School	Buffer
+1690	Crystal Creek Public School	Category 1
+1700	Cullen Bullen Public School	Buffer
+1727	Dapto Public School	Buffer
+1736	Darlington Point Public School	Buffer
+1736	Darlington Point Public School	Category 2
+1740	Leeville Public School	Category 2
+1762	Dora Creek Public School	Category 1
+1769	Doubtful Creek Public School	Category 2
+1770	Douglas Park Public School	Buffer
+1771	Drake Public School	Category 1
+1771	Drake Public School	Category 1
+1778	Dudley Public School	Category 1
+1788	Dundurrabin Public School	Category 1
+1789	Dunedoo Central School	Category 2
+1791	Dungay Public School	Buffer
+1793	Dungowan Public School	Category 2
+1799	Dural Public School	Buffer
+1801	Duranbah Public School	Category 1
+1803	Durrumbul Public School	Buffer
+1813	Ebenezer Public School	Category 1
+1822	Congewai Public School	Category 1
+1824	Elands Public School	Category 1
+1826	Ellalong Public School	Category 1
+1830	Ellerston Public School	Category 1
+1835	Eltham Public School	Category 2
+1839	Empire Bay Public School	Category 1
+1850	Epping Public School	Buffer
+1856	Erina Heights Public School	Category 1
+1869	Euchareena Public School	Category 1
+1873	Eumungerie Public School	Category 2
+1874	Eungai Public School	Category 1
+1879	Eureka Public School	Buffer
+1886	Evans River Community School	Category 1
+1901	Falls Creek Public School	Category 2
+1904	Fassifern Public School	Category 2
+1915	Fingal Head Public School	Buffer
+1936	Forster Public School	Buffer
+1944	Freemans Reach Public School	Category 1
+1946	Frenchs Forest Public School	Buffer
+1952	Galston Public School	Buffer
+1954	Ganmain Public School	Buffer
+1954	Ganmain Public School	Category 1
+1969	Gerogery Public School	Category 1
+1974	Sandy Hollow Public School	Buffer
+1978	Gilgai Public School	Buffer
+1992	Windang Public School	Buffer
+1994	Glenbrook Public School	Category 2
+2003	Glenhaven Public School	Category 1
+2012	Glenorie Public School	Category 2
+2016	Glenreagh Public School	Category 2
+2020	Glen William Public School	Category 1
+2021	Glossodia Public School	Category 1
+2035	Goolgowi Public School	Category 1
+2037	Goolmangar Public School	Category 1
+2041	Goonellabah Public School	Category 1
+2042	Goonengerry Public School	Buffer
+2049	Gosford Public School	Buffer
+2071	Green Hill Public School	Category 1
+2071	Green Hill Public School	Category 1
+2075	Green Valley Public School	Category 1
+2076	Greenwich Public School	Buffer
+2084	Greta Public School	Category 2
+2094	Gulargambone Central School	Buffer
+2100	Gum Flat Public School	Buffer
+2102	Gundagai Public School	Category 2
+2115	Gwabegar Public School	Category 1
+2129	Hampton Public School	Category 1
+2131	Hannam Vale Public School	Category 1
+2136	Hargraves Public School	Category 1
+2139	Harrington Public School	Buffer
+2153	Helensburgh Public School	Category 1
+2156	Hernani Public School	Category 2
+2157	Herons Creek Public School	Category 1
+2161	Hill End Public School	Category 1
+2161	Hill End Public School	Category 1
+2164	Hillside Public School	Category 1
+2166	Hill Top Public School	Category 1
+2171	Holgate Public School	Category 1
+2182	Horsley Park Public School	Buffer
+2187	Hoxton Park Public School	Category 1
+2188	Humula Public School	Category 1
+2190	Huntingdon Public School	Buffer
+2193	Rathmines Public School	Buffer
+2193	Rathmines Public School	Category 1
+2199	Huskisson Public School	Buffer
+2201	Ilford Public School	Category 1
+2214	Fernleigh Public School	Category 2
+2223	Jennings Public School	Category 2
+2225	Jerangle Public School	Buffer
+2231	Jerrys Plains Public School	Category 2
+2235	Jiggi Public School	Category 1
+2235	Jiggi Public School	Category 2
+2236	Jilliby Public School	Buffer
+2243	Johns River Public School	Buffer
+2255	Kangaloon Public School	Category 1
+2256	Kangaroo Valley Public School	Category 1
+2260	Karangi Public School	Category 1
+2271	Keiraville Public School	Buffer
+2280	Kendall Public School	Buffer
+2284	Kenthurst Public School	Category 1
+2285	Kentlyn Public School	Buffer
+2286	Kentucky Public School	Category 1
+2304	Kincumber Public School	Category 1
+2315	Kitchener Public School	Category 1
+2330	Kororo Public School	Category 1
+2333	Krambach Public School	Buffer
+2333	Krambach Public School	Buffer
+2334	Kulnura Public School	Category 1
+2340	Kurmond Public School	Category 1
+2342	Kurrajong Public School	Category 1
+2343	Kurrajong East Public School	Category 1
+2344	Kurrajong North Public School	Category 1
+2353	Ladysmith Public School	Category 1
+2356	Laguna Public School	Category 1
+2357	Lake Albert Public School	Buffer
+2362	Lake Munmorah Public School	Category 1
+2370	Lansdowne Public School	Category 1
+2375	Larnook Public School	Category 1
+2391	Leura Public School	Category 2
+2404	Lindfield East Public School	Category 2
+2407	Lisarow Public School	Category 2
+2413	Llandilo Public School	Category 2
+2428	Lowanna Public School	Buffer
+2429	Lowesdale Public School	Category 1
+2431	Luddenham Public School	Buffer
+2439	Macdonald Valley Public School	Category 1
+2464	Manifold Public School	Category 2
+2472	Maraylya Public School	Category 1
+2480	Maroota Public School	Buffer
+2489	Marsden Park Public School	Buffer
+2493	Martins Creek Public School	Category 2
+2496	Marulan Public School	Category 1
+2512	Medowie Public School	Buffer
+2515	Megalong Public School	Category 1
+2520	Menai Public School	Category 1
+2522	Mendooran Central School	Category 2
+2532	Bonnells Bay Public School	Category 1
+2550	Milbrodale Public School	Buffer
+2553	Millbank Public School	Buffer
+2555	Millfield Public School	Category 2
+2565	Milton Public School	Category 2
+2571	Minmi Public School	Buffer
+2580	Mitchells Island Public School	Category 1
+2581	Mittagong Public School	Buffer
+2584	Moama Public School	Category 1
+2585	Modanville Public School	Buffer
+2621	Morisset Public School	Category 1
+2637	Mount George Public School	Category 1
+2642	Mount Keira Public School	Buffer
+2643	Mount Kembla Public School	Category 1
+2652	Mount Victoria Public School	Buffer
+2658	Mulbring Public School	Category 1
+2659	Mulgoa Public School	Category 1
+2662	Mullengandra Public School	Category 2
+2664	Mullion Creek Public School	Category 2
+2668	Clergate Public School	Category 2
+2671	Mummulgum Public School	Category 2
+2696	Nambucca Heads Public School	Buffer
+2698	Nana Glen Public School	Category 1
+2699	Nangus Public School	Category 2
+2701	Naradhan Public School	Category 1
+2703	Narara Public School	Category 1
+2704	Narellan Public School	Category 1
+2710	Narrandera Public School	Category 1
+2723	Tomaree Public School	Category 1
+2736	Newcastle East Public School	Buffer
+2748	Niangala Public School	Category 2
+2751	Nimbin Central School	Category 1
+2759	Nords Wharf Public School	Category 2
+2761	Northbridge Public School	Buffer
+2771	Nulkaba Public School	Buffer
+2784	Nymboida Public School	Category 1
+2789	Oakdale Public School	Category 1
+2791	Oaklands Central School	Category 1
+2794	Oakville Public School	Category 1
+2799	Old Bar Public School	Category 1
+2814	Orara Upper Public School	Category 1
+2815	Orchard Hills Public School	Category 2
+2818	Otford Public School	Category 1
+2820	Ourimbah Public School	Category 1
+2823	Oxley Island Public School	Category 1
+2831	Pambula Public School	Category 1
+2841	Wooli Public School	Category 2
+2844	Paterson Public School	Category 1
+2846	Paxton Public School	Category 1
+2852	Peats Ridge Public School	Category 1
+2855	Pelaw Main Public School	Buffer
+2860	Penrose Public School	Category 1
+2867	Picton Public School	Buffer
+2886	Pleasant Hills Public School	Category 1
+2896	Port Kembla Public School	Buffer
+2900	Premer Public School	Buffer
+2902	Pretty Beach Public School	Category 1
+2917	Quaama Public School	Category 2
+2926	Leppington Public School	Buffer
+2933	Rand Public School	Category 1
+2935	Rankins Springs Public School	Category 1
+2976	The Rock Central School	Category 1
+2980	Whian Whian Public School	Category 1
+2983	Rocky River Public School	Buffer
+2987	Rosebank Public School	Buffer
+2996	Rosewood Public School	Category 1
+2999	Rossmore Public School	Category 2
+3031	St Marys Public School	Buffer
+3035	Salt Ash Public School	Category 1
+3045	Scarborough Public School	Category 2
+3048	Seaham Public School	Buffer
+3065	Shortland Public School	Buffer
+3077	Sofala Public School	Buffer
+3078	Somersby Public School	Category 1
+3083	South West Rocks Public School	Category 1
+3091	Spring Ridge Public School	Category 1
+3095	Springwood Public School	Category 1
+3103	Stanwell Park Public School	Buffer
+3109	Stockinbingal Public School	Category 2
+3112	Stokers Siding Public School	Category 1
+3122	Stratheden Public School	Buffer
+3122	Stratheden Public School	Category 1
+3125	Stroud Public School	Category 1
+3126	Stroud Road Public School	Buffer
+3147	Tacoma Public School	Category 1
+3148	Tahmoor Public School	Category 2
+3153	Tallimba Public School	Category 1
+3154	Tallong Public School	Category 1
+3156	Tambar Springs Public School	Category 1
+3159	Tanja Public School	Category 2
+3173	Tathra Public School	Category 1
+3175	Tea Gardens Public School	Category 1
+3182	The Sir Henry Parkes Memorial Public School	Category 2
+3221	Tintinhull Public School	Category 2
+3222	Tirranna Public School	Category 1
+3226	Tomerong Public School	Category 2
+3236	Main Arm Upper Public School	Category 1
+3247	Toronto Public School	Buffer
+3250	Toukley Public School	Buffer
+3252	Towamba Public School	Category 1
+3255	Tregeagle Public School	Category 1
+3260	Trunkey Public School	Category 1
+3269	Tuggerah Public School	Category 1
+3283	Tuntable Creek Public School	Category 1
+3293	Tyalgum Public School	Category 1
+3298	Uki Public School	Category 2
+3300	Ulan Public School	Category 2
+3302	Ulladulla Public School	Category 2
+3304	Ulong Public School	Buffer
+3311	Ungarie Central School	Category 1
+3316	Urbenville Public School	Buffer
+3316	Urbenville Public School	Category 1
+3329	Vineyard Public School	Buffer
+3332	North Wagga Public School	Buffer
+3343	Walhallow Public School	Category 1
+3346	Wallacia Public School	Category 2
+3358	West Wallsend Public School	Buffer
+3373	Wangi Wangi Public School	Buffer
+3378	Wardell Public School	Buffer
+3378	Wardell Public School	Category 1
+3384	Warners Bay Public School	Buffer
+3396	Waterfall Public School	Category 1
+3412	Wee Jasper Public School	Buffer
+3412	Wee Jasper Public School	Category 1
+3422	Wentworth Falls Public School	Category 1
+3445	Willawarrin Public School	Category 1
+3454	Wilsons Creek Public School	Buffer
+3457	Windellama Public School	Category 1
+3457	Windellama Public School	Category 1
+3461	Wingello Public School	Category 1
+3470	Wisemans Ferry Public School	Buffer
+3473	Wollar Public School	Category 2
+3479	Wolumla Public School	Category 2
+3487	Wongarbon Public School	Buffer
+3503	Woolgoolga Public School	Buffer
+3503	Woolgoolga Public School	Buffer
+3522	Wyee Public School	Category 1
+3528	Wyong Creek Public School	Buffer
+3537	Yanderra Public School	Buffer
+3564	Edgeworth Public School	Buffer
+3566	Zig Zag Public School	Buffer
+3578	Pottsville Beach Public School	Category 1
+3615	Kemps Creek Public School	Category 1
+3635	Scotts Head Public School	Category 2
+3640	Afterlee Public School	Category 1
+3643	Stuarts Point Public School	Category 1
+3659	Sussex Inlet Public School	Category 1
+3673	St Georges Basin Public School	Category 1
+3678	Warwick Farm Public School	Buffer
+3696	Soldiers Point Public School	Category 1
+3719	Annangrove Public School	Category 1
+3735	Woronora River Public School	Category 1
+3744	Warragamba Public School	Buffer
+3760	Upper Coopers Creek Public School	Category 1
+3762	Wiripaang Public School	Category 2
+3765	Bundeena Public School	Category 2
+3797	Oatley West Public School	Buffer
+3826	Gwynneville Public School	Buffer
+3829	Jannali Public School	Category 1
+3833	Wahroonga Public School	Category 1
+3854	Hazelbrook Public School	Buffer
+3855	Turramurra Public School	Buffer
+3856	Wyrallah Road Public School	Buffer
+3874	Kahibah Public School	Buffer
+3885	Mount Colah Public School	Category 1
+3896	Como West Public School	Buffer
+3903	Glen Alice Public School	Category 2
+3914	Grays Point Public School	Category 1
+3919	Castle Cove Public School	Buffer
+3923	Kapooka Public School	Category 1
+3928	Cabramurra Public School	Category 1
+3939	Mount Hutton Public School	Category 1
+3943	Gordon West Public School	Buffer
+3956	Beaumont Road Public School	Buffer
+3958	Padstow Heights Public School	Buffer
+3971	Beacon Hill Public School	Category 1
+3984	Balgowlah North Public School	Buffer
+3985	Gordon East Public School	Buffer
+3987	Katoomba North Public School	Category 2
+3988	Biraban Public School	Category 1
+3996	Fern Bay Public School	Category 1
+4004	Jannali East Public School	Category 1
+4015	Mowbray Public School	Buffer
+4017	Booragul Public School	Buffer
+4021	Manly Vale Public School	Category 1
+4022	Coal Point Public School	Category 1
+4034	Eleebana Public School	Buffer
+4038	Epping Heights Public School	Buffer
+4049	Mount Kuring-gai Public School	Buffer
+4050	Point Clare Public School	Category 1
+4077	Illawong Public School	Category 1
+4097	Tuggerawong Public School	Buffer
+4106	Nowra Hill Public School	Category 1
+4110	Central Mangrove Public School	Category 1
+4111	Tweed Heads South Public School	Buffer
+4117	Warnervale Public School	Category 2
+4136	Garden Suburb Public School	Category 2
+4148	Castlereagh Public School	Category 1
+4149	North Haven Public School	Category 1
+4155	Edgeworth Heights Public School	Buffer
+4177	Albert Park Public School	Category 2
+4185	Valentine Public School	Category 2
+4195	Warrimoo Public School	Category 1
+4196	Kempsey South Public School	Buffer
+4197	Blacksmiths Public School	Buffer
+4199	Elanora Heights Public School	Buffer
+4200	Allambie Heights Public School	Buffer
+4203	Kotara South Public School	Buffer
+4206	Biddabah Public School	Category 1
+4208	Fennell Bay Public School	Category 1
+4214	Narrandera East Infants School	Category 1
+4218	Gosford East Public School	Buffer
+4221	Loftus Public School	Category 2
+4230	Laguna Street Public School	Buffer
+4246	Illaroo Road Public School	Buffer
+4257	Ryde East Public School	Buffer
+4270	Khancoban Public School	Category 1
+4274	Hornsby Heights Public School	Category 1
+4276	Thornleigh West Public School	Buffer
+4277	Campbelltown East Public School	Category 1
+4281	Deniliquin North Public School	Category 1
+4286	Camden South Public School	Buffer
+4293	St Ives North Public School	Category 1
+4298	Yarrawarrah Public School	Category 1
+4311	Bardia Public School	Buffer
+4313	Blaxland East Public School	Category 1
+4318	Hillsborough Public School	Category 1
+4320	Gwandalan Public School	Category 1
+4324	Charlestown South Public School	Category 2
+4327	Marayong South Public School	Category 1
+4331	St Ives Public School	Buffer
+4348	Coleambally Central School	Category 2
+4354	Faulconbridge Public School	Category 2
+4357	Pleasant Heights Public School	Category 1
+4359	Bilgola Plateau Public School	Category 1
+4365	Hornsby North Public School	Category 1
+4367	Caves Beach Public School	Category 1
+4370	Belair Public School	Category 1
+4374	Talbingo Public School	Buffer
+4379	Floraville Public School	Category 1
+4397	Wyoming Public School	Category 1
+4398	Chertsey Public School	Buffer
+4400	St Ives Park Public School	Buffer
+4404	Narranga Public School	Buffer
+4411	Westport Public School	Category 2
+4416	Merewether Heights Public School	Category 1
+4421	Gillwinga Public School	Buffer
+4423	Mount Brown Public School	Buffer
+4424	Lapstone Public School	Category 1
+4426	Killarney Vale Public School	Buffer
+4427	Niagara Park Public School	Category 1
+4428	Southern Cross School	Category 2
+4431	Marton Public School	Buffer
+4432	Mimosa Public School	Category 2
+4433	Wideview Public School	Buffer
+4435	Mount Riverview Public School	Category 1
+4436	Winmalee Public School	Category 1
+4442	Emu Heights Public School	Buffer
+4454	Marra Creek Public School	Category 1
+4462	Figtree Heights Public School	Buffer
+4464	Sanctuary Point Public School	Category 2
+4469	Jewells Public School	Category 2
+4473	Werrington Public School	Buffer
+4483	Grose View Public School	Category 1
+4489	Ruse Public School	Buffer
+4500	Nareena Hills Public School	Category 1
+4503	Tyalla Public School	Buffer
+4506	Toormina Public School	Category 1
+4507	Bonnet Bay Public School	Category 1
+4522	Wamberal Public School	Category 1
+4524	Hastings Public School	Category 2
+4526	Matthew Pearce Public School	Category 1
+4534	Orama Public School	Buffer
+4535	Blairmount Public School	Category 2
+4542	Chittaway Bay Public School	Category 2
+4547	Tanilba Bay Public School	Category 1
+4548	Copacabana Public School	Category 1
+4552	Manning Gardens Public School	Category 1
+4556	Wytaliba Public School	Category 1
+4557	Sandy Beach Public School	Category 1
+4562	Sunshine Bay Public School	Buffer
+4564	Wirreanda Public School	Category 1
+4568	Ellison Public School	Category 1
+4573	Tharawal Public School	Buffer
+4574	Samuel Gilbert Public School	Category 1
+4575	Wingham Brush Public School	Category 1
+4581	Frank Partridge VC Public School	Category 1
+4588	Northlakes Public School	Buffer
+4592	Vincentia Public School	Category 1
+4601	Aldavilla Public School	Buffer
+4602	William Bayldon Public School	Category 1
+4603	St Helens Park Public School	Category 2
+4605	Alfords Point Public School	Category 2
+4606	Mullaway Public School	Category 1
+4611	Hallidays Point Public School	Category 1
+4612	Broulee Public School	Category 1
+4614	Windsor Park Public School	Category 1
+4618	North Nowra Public School	Category 2
+4619	Henry Fulton Public School	Buffer
+4620	Glendore Public School	Buffer
+4623	Blue Haven Public School	Category 1
+4625	Currans Hill Public School	Buffer
+4626	Callala Public School	Category 1
+4628	Harrington Park Public School	Buffer
+4631	Surveyors Creek Public School	Buffer
+4632	Bogangar Public School	Category 1
+4633	Jerrabomberra Public School	Buffer
+4637	Woongarrah Public School	Buffer
+4638	Ironbark Ridge Public School	Category 1
+4641	Shell Cove Public School	Buffer
+4642	Ashtonfield Public School	Category 1
+4643	North East Public School of Distance Education	Category 2
+4645	Ropes Crossing Public School	Buffer
+4650	Wilton Public School	Category 2
+4653	Riverbank Public School	Category 1
+4654	Lake Cathie Public School	Buffer
+5133	Stanford Merthyr Infants School	Buffer
+5247	New Lambton Heights Infants School	Category 1
+5260	Cardiff North Public School	Buffer
+5272	Heathcote East Public School	Buffer
+5401	Glenfield Park School	Category 1
+5428	Field of Mars Environmental Education Centre	Buffer
+5429	Camden Park Environmental Education Centre	Category 1
+5453	Putland School	Category 1
+5456	Girrakool School	Category 1
+5458	Wetlands Environmental Education Centre	Category 1
+5550	Willans Hill School	Category 1
+5558	John Hunter Hospital School	Category 1
+5575	Cook School	Category 2
+5576	Highlands School	Category 1
+5579	The Beach School	Category 2
+5582	Wakefield School	Category 2
+5621	Kurrambee School	Category 1
+5627	Glenvale School	Category 1
+5632	Lawrence Hargrave School	Buffer
+5647	Bates Drive School	Category 2
+5656	Arranounbai School	Category 1
+5667	Wooglemai Environmental Education Centre	Category 1
+5675	Sir Eric Woodward Memorial School	Buffer
+5679	Bournda Environmental Education Centre	Category 1
+5679	Bournda Environmental Education Centre	Category 1
+5680	Thalgarrah Environmental Education Centre	Category 1
+5681	Wambangalang Environmental Education Centre	Category 1
+5682	Awabakal Environmental Education Centre	Category 1
+5684	Tangara School	Category 1
+5689	Wilson Park School	Buffer
+5690	Longneck Lagoon Environmental Education Centre	Category 1
+5691	Royal National Park Environment Education Centre	Category 1
+5694	Brewongle Environmental Education Centre	Category 1
+5698	Havenlee School	Category 2
+5704	Newcastle Junior School	Category 1
+5714	Gibberagong Environmental Education Centre	Category 1
+5723	Five Islands School	Buffer
+5731	Cascade Environmental Education Centre	Buffer
+5732	Warrumbungle National Park Environmental Ed Centre	Category 1
+5735	Campbell House School	Category 1
+5738	Kotara School	Category 2
+5740	Rumbalara Environmental Education Centre	Category 1
+5741	Botany Bay Environmental Education Centre	Category 1
+5743	Illawarra Environmental Education Centre	Category 1
+5748	Ajuga School	Category 1
+5752	Penrith Lakes Environmental Education Centre	Buffer
+5755	HopeTown School	Category 1
+5760	North Gosford Learning Centre	Category 1
+5761	Penrith Valley School	Buffer
+5763	Coffs Harbour Learning Centre	Buffer
+5765	The Ponds School	Buffer
+8108	Cessnock High School	Buffer
+8111	Farrer Memorial Agricultural High School	Category 1
+8115	Gosford High School	Category 1
+8121	Hurlstone Agricultural High School	Category 1
+8123	Kempsey High School	Buffer
+8123	Kempsey High School	Category 1
+8124	The Rivers Secondary College Lismore High Campus	Category 1
+8125	Lithgow High School	Category 1
+8129	Murwillumbah High School	Category 1
+8140	Taree High School	Buffer
+8142	Wagga Wagga High School	Category 1
+8144	Yanco Agricultural High School	Category 2
+8150	Katoomba High School	Category 1
+8157	Narrandera High School	Category 1
+8162	Macksville High School	Category 1
+8166	Wyong High School	Category 1
+8177	Kurri Kurri High School	Category 1
+8177	Kurri Kurri High School	Category 2
+8204	Dapto High School	Category 1
+8210	Lake Macquarie High School	Buffer
+8214	The Rivers Sec College Richmond River High Campus	Category 2
+8215	Picton High School	Buffer
+8222	Asquith Girls High School	Category 1
+8233	Hunter Sports High School	Category 2
+8259	Callaghan College Wallsend Campus	Category 2
+8271	Lucas Heights Community School	Category 1
+8272	Coffs Harbour Senior College	Category 1
+8274	Tuggerah Lakes Secondary College Tumbi Umbi	Category 1
+8278	Wadalba Community School	Category 1
+8279	Lake Munmorah High School	Category 1
+8280	Camden Haven High School	Category 1
+8281	Great Lakes College Senior Campus	Category 1
+8289	Great Lakes College Tuncurry Campus	Category 1
+8291	Rouse Hill High School	Category 1
+8292	Kariong Mountains High School	Buffer
+8343	Tumut High School	Category 1
+8347	Coonabarabran High School	Category 1
+8358	Tenterfield High School	Category 2
+8358	Tenterfield High School	Category 2
+8370	Tweed River High School	Buffer
+8372	The Forest High School	Buffer
+8373	Five Islands Secondary College	Category 1
+8389	Swansea High School	Category 1
+8390	Whitebridge High School	Category 1
+8391	Wingham High School	Buffer
+8391	Wingham High School	Category 1
+8391	Wingham High School	Category 1
+8391	Wingham High School	Category 1
+8394	Miller High School	Buffer
+8396	Windsor High School	Buffer
+8397	Ashcroft High School	Category 1
+8400	St Ives High School	Buffer
+8405	Erina High School	Category 1
+8409	Scone High School	Buffer
+8411	West Wallsend High School	Buffer
+8413	Morisset High School	Category 1
+8415	Ryde Secondary College	Category 1
+8416	Ku-ring-gai High School	Category 1
+8423	Kotara High School	Category 1
+8432	Engadine High School	Category 2
+8435	Turramurra High School	Category 1
+8438	Pennant Hills High School	Category 1
+8440	Warners Bay High School	Category 2
+8446	Springwood High School	Category 1
+8448	Bomaderry High School	Category 2
+8449	Figtree High School	Category 1
+8450	Tumbarumba High School	Category 1
+8454	Barrenjoey High School	Buffer
+8457	Killara High School	Buffer
+8458	Kingswood High School	Category 1
+8465	Tuggerah Lakes Secondary College The Entrance	Category 1
+8466	Glendale High School	Category 1
+8467	Henry Kendall High School	Buffer
+8469	Orara High School	Buffer
+8473	Chifley College Senior Campus	Buffer
+8479	Davidson High School	Category 2
+8481	Galston High School	Category 1
+8487	Eden Marine High School	Category 1
+8488	Chifley College Dunheved Campus	Category 1
+8494	Coomealla High School	Category 2
+8498	Muirfield High School	Buffer
+8502	Tomaree High School	Category 1
+8513	Brisbane Water Secondary College Umina Campus	Category 1
+8515	Gorokan High School	Category 1
+8519	Warialda High School	Category 1
+8519	Warialda High School	Category 1
+8520	The Rivers Secondary College Kadina High Campus	Category 1
+8522	Blaxland High School	Category 1
+8526	Colo High School	Category 1
+8527	Toormina High School	Category 1
+8533	Terrigal High School	Category 1
+8534	Great Lakes College Forster Campus	Buffer
+8536	Narooma High School	Category 1
+8544	Lisarow High School	Category 1
+8547	Northlakes High School	Category 1
+8548	Woolgoolga High School	Category 1
+8548	Woolgoolga High School	Category 2
+8554	Hastings Secondary College Westport Campus	Category 2
+8562	Irrawang High School	Category 1
+8563	Tuggerah Lakes Secondary College Berkeley Vale	Category 1
+8565	Hawkesbury High School	Category 1
+8566	Melville High School	Category 1
+8567	Northern Beaches Secondary College Manly Campus	Category 2
+8573	Winmalee High School	Category 1
+8577	Byron Bay High School	Category 1
+8578	Alstonville High School	Category 1
+8579	Kingscliff High School	Category 1
+8581	Batemans Bay High School	Category 1
+8583	Menai High School	Buffer
+8585	Kincumber High School	Category 1
+8591	Narara Valley High School	Buffer
+8593	Vincentia High School	Category 1
+8595	Nambucca Heads High School	Category 1
+8596	Wollumbin High School	Category 1
+8598	Oberon High School	Category 1
+8598	Oberon High School	Category 1
+8852	The Jannali High School	Buffer
+8884	Epping Boys High School	Category 2
+8903	Cardiff High School	Category 1
+8909	Toronto High School	Category 1
+8911	The Ponds High School	Category 1

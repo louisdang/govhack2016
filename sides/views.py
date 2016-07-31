@@ -37,19 +37,44 @@ def search_form(request):
 	#return render(request, 'search_form.html')
 	return render(request, 'index.html')
 	
+def get_bushfire_cat(school_code):
+	bush_fire_risk = ""
+	
+	finders.find('NSW-Government-Schools-by-Bushfire-Category.txt')
+	searched_locations = finders.searched_locations
+	#print searched_locations
+	file_path = os.path.join(searched_locations[-1],'NSW-Government-Schools-by-Bushfire-Category.txt')
+	print file_path
+	
+	with open(file_path) as f:
+		f.readline()
+		lines = f.readlines()
+		
+		for each_line in lines:
+			cols = each_line.split("\t")
+			
+			doe_school_code = cols[0].rstrip("\r\n")
+			
+			if(doe_school_code == school_code):
+				print school_code
+				
+				bush_fire_risk = cols[2].rstrip("\r\n")
+				break
+			else:
+				bush_fire_risk = "No_risk"
+			
+			print bush_fire_risk
+			
+	return bush_fire_risk		
+	
+
 def search_postcode(request):
 	
 	if 'postcode' in request.GET:
 		postcode = request.GET['postcode']
 	
+		
 		json_array = []
-			
-		#url_file = static('Government-School-Locations.txt')
-		#print url_file
-		
-		#data = urllib2.urlopen('https://github.com/ronniels92372/govhack2016/blob/master/Government-School-Locations.txt')
-		
-		 
 		finders.find('Government-School-Locations.txt')
 		searched_locations = finders.searched_locations
 		#print searched_locations
@@ -66,27 +91,33 @@ def search_postcode(request):
 			for each_line in lines:
 				cols = each_line.split("\t")
 					
-				school_name_col = cols[2]
-				postcode_col = cols[19]
-				total_enrollments = cols[10]
-				lat = cols[20]
-				long = cols[21]
+				school_code = cols[0].rstrip("\r\n")
+				school_name_col = cols[2].rstrip("\r\n")
+				postcode_col = cols[19].rstrip("\r\n")
+				total_enrollments = cols[10].rstrip("\r\n")
+				lat = cols[20].rstrip("\r\n")
+				long = cols[21].rstrip("\r\n")
 					
-				
 				if(str(postcode) == postcode_col):
+					
+					bush_fire_cat = get_bushfire_cat(school_code)
+
 					print "---------------------"
 					print postcode_col
 					print school_name_col
 					print total_enrollments
 					print lat
 					print long
+					print bush_fire_cat
 					
 					data = {
 					'json_school_name' : school_name_col,
 					'json_total_enrollments' : total_enrollments,
 					'lat' : lat,
-					'long' : long
+					'long' : long,
+					'bush_fire_cat' : bush_fire_cat
 					}
+			
 			
 					json_school_output = json.dumps(data)
 					json_array.append(json_school_output)
