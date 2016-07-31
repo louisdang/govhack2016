@@ -25,7 +25,7 @@ def get_optimal_routes(sources, destinations):
     dest_ids = [x['id'] for x in destinations.values()]
 
     demand = {x['id']: x['num_students'] for x in sources.values()}
-    supply = {x['id']: x['capacity'] for x in destinations.values()}
+    supply = {x['id']: x['num_students'] for x in destinations.values()}
 
     log.info("Calling gmaps api...")
     distances = gmaps.distance_matrix(origins=sources_points, destinations=destinations_points, mode='walking')

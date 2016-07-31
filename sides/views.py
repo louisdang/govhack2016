@@ -4,16 +4,15 @@ import json
 
 def get_optimal_routes(request):
     if request.method=='POST':
-    	if 'data' not in request.POST:
-    		return HttpResponseBadRequest("No input data received")
-        received_json_data=json.loads(request.POST['data'])
-        result = utils.POST_optimal_routes(received_json_data['sources'], received_json_data['destinations'])
-        if 'callback' in request.REQUEST:
-                # a jsonp response!
-                resp_text = '%s(%s);' % (request.REQUEST['callback'], json.dumps(result))
-            	return HttpResponse(resp_text, "text/javascript")
-        else:
-        	return JsonResponse(result)
+    	#if 'data' not in request.POST:
+    		#return HttpResponseBadRequest("No input data received")
+        #received_json_data=json.loads(request.POST['data'])
+        if 'sources' not in request.POST:
+        	return HttpResponseBadRequest("No sources")
+        if 'destinations' not in request.POST:
+        	return HttpResponseBadRequest("No destinations")
+        result = utils.get_optimal_routes(request.POST['sources'], (request.POST['destinations']))
+    	return JsonResponse(result)
     else:
         return HttpResponseBadRequest("Only accepts POST for now")
 
