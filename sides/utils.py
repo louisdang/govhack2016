@@ -25,7 +25,7 @@ def get_optimal_routes(sources, destinations):
     dest_ids = [x['id'] for x in destinations.values()]
 
     demand = {x['id']: x['num_students'] for x in sources.values()}
-    supply = {x['id']: x['num_students'] for x in destinations.values()}
+    supply = {x['id']: x['capacity'] for x in destinations.values()}
 
     log.info("Calling gmaps api...")
     distances = gmaps.distance_matrix(origins=sources_points, destinations=destinations_points, mode='walking')
@@ -41,7 +41,7 @@ def get_optimal_routes(sources, destinations):
     routes = [(s,d) for s in source_ids for d in dest_ids]
     route_lookup = {'Route_{}_{}'.format(x.replace(' ','_'),y.replace(' ','_')):(x,y) for (x,y) in routes}
     route_vars = LpVariable.dicts("Route",(source_ids,dest_ids),0,None,LpInteger)
-    prob += lpSum([route_vars[w][b]*costs[w][b] for (w,b) in routes])
+    prob += lpSum([route_vars[w][b]*(costs[w][b]**2) for (w,b) in routes])
     for dest in dest_ids:
         prob += lpSum([route_vars[source][dest] for source in source_ids]) <= supply[dest], "Students going to {} is <= {}".format(demand, supply[dest])
     for source in source_ids:
