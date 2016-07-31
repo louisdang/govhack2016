@@ -3,11 +3,11 @@ from sides import utils
 import json
 
 def get_optimal_routes(request):
-    if request.method=='GET':
-    	if 'data' not in request.GET:
+    if request.method=='POST':
+    	if 'data' not in request.POST:
     		return HttpResponseBadRequest("No input data received")
-        received_json_data=json.loads(request.GET['data'])
-        result = utils.get_optimal_routes(received_json_data['sources'], received_json_data['destinations'])
+        received_json_data=json.loads(request.POST['data'])
+        result = utils.POST_optimal_routes(received_json_data['sources'], received_json_data['destinations'])
         if 'callback' in request.REQUEST:
                 # a jsonp response!
                 resp_text = '%s(%s);' % (request.REQUEST['callback'], json.dumps(result))
@@ -15,5 +15,5 @@ def get_optimal_routes(request):
         else:
         	return JsonResponse(result)
     else:
-        return HttpResponseBadRequest("Only accepts GET for now")
+        return HttpResponseBadRequest("Only accepts POST for now")
 
