@@ -1,8 +1,8 @@
 #sidebar {
     background: #ccc;
+    padding: 20px;
 }
 
 #map {
-    width: 100px;
-    height: 200px;
+    height: 600px;
 }

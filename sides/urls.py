@@ -19,7 +19,7 @@ from sides import views
 
 urlpatterns = [
     url(r'^get_optimal_routes/?', views.get_optimal_routes),
-    #url(r'^polls/', include('polls.urls')),
+    url(r'^$', views.index, name='index'),
     url(r'^admin/', admin.site.urls),
 	url(r'^search_form/', views.search_form),
 	url(r'^search_postcode/', views.search_postcode),
