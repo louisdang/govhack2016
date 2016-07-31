@@ -16,21 +16,24 @@ def convert_int(x):
 		raise
 
 
-schools = collections.OrderedDict()
-for row in csv.DictReader(open(os.path.expanduser('~/workbook1.csv'))):
-	try:
-		schools[row['SCHOOL_NAME']] =\
-			{'id': row['SCHOOL_NAME'],
-			'lat': float(row['LATITUDE']),
-			'lng': float(row['LONGITUDE']),
-			'num_students': convert_int(row['TOTAL_ENROLMENTS'])}
-	except ValueError:
-		continue
+# schools = collections.OrderedDict()
+# for row in csv.DictReader(open(os.path.expanduser('~/workbook1.csv'))):
+# 	try:
+# 		schools[row['SCHOOL_NAME']] =\
+# 			{'id': row['SCHOOL_NAME'],
+# 			'lat': float(row['LATITUDE']),
+# 			'lng': float(row['LONGITUDE']),
+# 			'num_students': convert_int(row['TOTAL_ENROLMENTS'])}
+# 	except ValueError:
+# 		continue
 
-sources = schools.values()[:3]
-destinations = schools.values()[4:10]
+# sources = schools.values()[:3]
+# destinations = schools.values()[4:10]
 
 def get_optimal_routes(sources, destinations):
+	sources = {x['id']: x for x in sources}
+	destinations = {x['id']: x for x in destinations}
+
 	sources_points = [{'lat': x['lat'], 'lng': x['lng']} for x in sources]
 	destinations_points = [{'lat': x['lat'], 'lng': x['lng']} for x in destinations]
 
@@ -71,5 +74,5 @@ def get_optimal_routes(sources, destinations):
 	for v in prob.variables():
 		src, dst = route_lookup[v.name]
 		value = v.value()
-		result.append({'src': schools[src], 'dst': schools[dst], 'value': int(value)})
+		result.append({'src': sources[src], 'dst': destinations[dst], 'value': int(value)})
 	return result
