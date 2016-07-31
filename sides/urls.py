@@ -16,12 +16,11 @@ Including another URLconf
 from django.conf.urls import include, url
 from django.contrib import admin
 from sides import views
-from polls.views import search_form,search_postcode
 
 urlpatterns = [
     url(r'^get_optimal_routes/?', views.get_optimal_routes),
-    url(r'^polls/', include('polls.urls')),
+    #url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
-	url(r'^search_form/', search_form),
-	url(r'^search_postcode/', search_postcode),
+	url(r'^search_form/', views.search_form),
+	url(r'^search_postcode/', views.search_postcode),
 ]

@@ -25,7 +25,6 @@ def search_postcode(request):
 		#print url_file
 		
 		#data = urllib2.urlopen('https://github.com/ronniels92372/govhack2016/blob/master/Government-School-Locations.txt')
-		
 		 
 		result = finders.find('Government-School-Locations.txt')
 		searched_locations = finders.searched_locations
