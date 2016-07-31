@@ -122,3 +122,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 CSRF_COOKIE_SECURE = False
 CORS_ORIGIN_ALLOW_ALL = True
+
+STATIC_ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'static')
