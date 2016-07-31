@@ -14,15 +14,12 @@ def search_form(request):
 	#return HttpResponse("search_form.")
 	return render(request, 'search_form.html')
 	
-def search_postcode(request):
-	
+def search_postcode(request):	
 	if 'postcode' in request.GET:
 		postcode = request.GET['postcode']
 	
 		print "school function"
 		#print postcode
-			
-		json_array = []
 			
 		#url_file = static('Government-School-Locations.txt')
 		#print url_file
@@ -33,8 +30,7 @@ def search_postcode(request):
 		result = finders.find('Government-School-Locations.txt')
 		searched_locations = finders.searched_locations
 		#print searched_locations
-		file_path = searched_locations[1]+"\\"+'Government-School-Locations.txt'
-		print file_path
+		file_path = os.path.join(searched_locations[1],'Government-School-Locations.txt')
 		
 		with open(file_path) as f:
 			first_line = f.readline()
@@ -61,7 +57,6 @@ def search_postcode(request):
 					print lat
 					print long
 					
-		
 		
 		
 	return HttpResponse("POST CODE.")

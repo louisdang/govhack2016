@@ -13,11 +13,15 @@ Including another URLconf
     1. Import the include() function: from django.conf.urls import url, include
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
-from django.conf.urls import url
+from django.conf.urls import include, url
 from django.contrib import admin
 from sides import views
+from polls.views import search_form,search_postcode
 
 urlpatterns = [
+    url(r'^get_optimal_routes/?', views.get_optimal_routes),
+    url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
-    url(r'^get_optimal_routes/?', views.get_optimal_routes)
+	url(r'^search_form/', search_form),
+	url(r'^search_postcode/', search_postcode),
 ]
