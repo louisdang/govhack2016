@@ -31,8 +31,8 @@ def convert_int(x):
 # destinations = schools.values()[4:10]
 
 def get_optimal_routes(sources, destinations):
-	sources = {x['id']: x for x in sources}
-	destinations = {x['id']: x for x in destinations}
+	sources = collections.OrderedDict([(x['id'], x) for x in sources])
+	destinations = collections.OrderedDict([(x['id'], x) for x in destinations])
 
 	sources_points = [{'lat': x['lat'], 'lng': x['lng']} for x in sources]
 	destinations_points = [{'lat': x['lat'], 'lng': x['lng']} for x in destinations]
