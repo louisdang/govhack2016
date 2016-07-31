@@ -70,7 +70,8 @@ if __name__ == '__main__':
                 {'id': row['SCHOOL_NAME'],
                 'lat': float(row['LATITUDE']),
                 'lng': float(row['LONGITUDE']),
-                'num_students': convert_int(row['TOTAL_ENROLMENTS'])}
+                'num_students': convert_int(row['TOTAL_ENROLMENTS']),
+                'capacity': convert_int(row['TOTAL_ENROLMENTS'])}
         except ValueError:
             continue
 
