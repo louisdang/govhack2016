@@ -1,13 +1,47 @@
 
+
+function getCookie(name) {
+    var cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+        var cookies = document.cookie.split(';');
+        for (var i = 0; i < cookies.length; i++) {
+            var cookie = jQuery.trim(cookies[i]);
+            // Does this cookie string begin with the name we want?
+            if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                break;
+            }
+        }
+    }
+    return cookieValue;
+}
+var csrftoken = getCookie('csrftoken');
+
+function csrfSafeMethod(method) {
+    // these HTTP methods do not require CSRF protection
+    return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+}
+$.ajaxSetup({
+    beforeSend: function(xhr, settings) {
+        if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+            xhr.setRequestHeader("X-CSRFToken", csrftoken);
+        }
+    }
+});
+
+
+
 var map;
 
 var appState = {
     isDropping: false,
     evacSites: [],
+    schools: [],
     currentSiteCapacity: null,
 }
 
-var getSchools = function () {
+var getSchools = function (postcode, cb) {
+
     return [
         {
             id: 0,
@@ -79,8 +113,28 @@ var showSchoolsOnMap = function (schools) {
         var marker = new google.maps.Marker({
          position: { lat: school.lat, lng: school.long },
          map: map,
-         title: 'Hello World!'
+         title: 'Hello World!',
+         icon: '/static/images/school-pin.png'
        });
+    })
+}
+
+var showSchoolsOnList = function (schools) {
+
+    // reset list
+    $('#list').html('')
+
+    // append data to list
+    schools.forEach(function(school) {
+
+        var $li = $('<li>')
+        var $title = $('<h4>').html(school.school);
+        var $capacity = $('<p>').html('capacity: ' + school.capacity);
+
+        $li.append($title)
+        $li.append($capacity)
+
+        $('#list').append($li);
     })
 }
 
@@ -148,7 +202,8 @@ var geocodeAddress = function (geocoder, resultsMap, positionString) {
 var addEvacSite = function (latLng, map) {
     var marker = new google.maps.Marker({
         position: latLng,
-        map: map
+        map: map,
+        icon: '/static/images/site-pin.png',
     });
     marker.meta = {
         type: 'evac',
@@ -163,7 +218,7 @@ var addEvacSite = function (latLng, map) {
 var mapEvacSites = function (sites) {
     return sites.map(function(site){
         return {
-            id: site.meta.id,
+            id: "id" + site.meta.id,
             lat: site.position.lat(),
             lng:  site.position.lng(),
             num_students: site.meta.capacity,
@@ -174,7 +229,7 @@ var mapEvacSites = function (sites) {
 var mapSchools = function (schools) {
     return schools.map(function (school) {
         return {
-            id: school.id,
+            id: "id" + school.id,
             lat: school.lat,
             lng: school.long,
             num_students: school.capacity
@@ -204,12 +259,15 @@ var initMap = function () {
 }
 
 
+
+
+
 $('#mainInput').submit(function (e) {
     e.preventDefault();
     var formValue = $('#inputContent').val();
-	
+
 	console.log(formValue)
-	
+
      // $.ajax({
      //      url: '/search_postcode/?postcode=' + formValue,
      //      dataType: 'json',
@@ -223,18 +281,27 @@ $('#mainInput').submit(function (e) {
      //});
 	 $.get('/search_postcode/?postcode=' + formValue, function(response){
 		 console.log(response);
+
+        //  map schools to objects that play nicely with my code
+
+         appState.schools = response.json_array.map(function(s, index) {
+            var school = JSON.parse(s);
+             return {
+                 id: index,
+                 school: school.json_school_name,
+                 capacity: school.json_total_enrollments,
+                 lat: parseFloat(school.lat),
+                 long: parseFloat(school.long),
+             }
+         })
+
+         showSchoolsOnMap(appState.schools);
+         showSchoolsOnList(appState.schools)
+         navigateTo(formValue + ' Australia');
+
+
 	 })
-	 
-	
-	
 
-    // on submit draw pointers
-
-    // jsonDatas
-
-    var schools = getSchools();
-    showSchoolsOnMap(schools);
-    navigateTo(formValue + ' Australia');
 })
 
 $('#addSite').on('click', function(e) {
@@ -254,27 +321,73 @@ $('#siteCapacity').on('keyup', function(e) {
     appState.currentSiteCapacity = e.currentTarget.value;
 })
 
+var parseResponse = function(response) {
+    return JSON.parse(response)
+}
+
 $('#run').on('click', function(e) {
     // var schools = getSchools();
     var sites = mapEvacSites(appState.evacSites);
-    var schools = mapSchools(getSchools());
+    var schools = mapSchools(appState.schools);
 
     var data = { sources: schools, destinations: sites }
 
+
+    console.log(data);
+
     $.ajax({
         type: "POST",
-        url: 'http://ec2-54-206-103-17.ap-southeast-2.compute.amazonaws.com/get_optimized_results',
-        data: data,
+        url: "http://ec2-54-206-122-5.ap-southeast-2.compute.amazonaws.com/get_optimal_routes",
+        data: JSON.stringify(data),
         dataType: 'json',
         success: function (res) {
             console.log('success')
             console.log(res)
+
+            var $list = $('#list')
+            $list.html('');
+
+            appState.evacSites.forEach(function(site){
+
+                var $li = $('<li>')
+                var $title = $('<h4>').html("Evacuation Site #" + site.meta.id);
+                var $capacity = $('<p class="capacity">').html('capacity: ' + site.meta.capacity);
+
+                var currentRoutes = res.filter(function(route) {
+                    return route.dst.id[2] === "" + site.meta.id;
+                })
+
+
+                var $schools = $('<div>')
+
+
+                currentRoutes.forEach(function(route) {
+                    var currentSchools = appState.schools.filter(function(school) {
+                        return route.src.id[2] === "" + school.id && route.value > 0
+                    })
+
+                    currentSchools.forEach(function(school){
+                        var $school = $('<p>').html(school.school + ' ' + route.value)
+                        $schools.append($school);
+                    })
+
+                })
+
+                $li.append($title)
+                $li.append($capacity)
+                $li.append($schools)
+
+                $list.append($li);
+            })
+
         },
         error: function (err) {
             console.log('err')
             console.log(err)
         }
     });
+
+    console.log(data);
 
     // debugger;
 
