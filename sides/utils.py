@@ -1,8 +1,6 @@
 import googlemaps
 gmaps = googlemaps.Client(key='AIzaSyDPvDQc0_i1cT9sMoT7vnHRUuk8vF3D1CE')
 from pulp import LpProblem, LpMinimize, LpInteger, LpVariable, lpSum
-import os
-import csv
 import collections
 import logging
 
@@ -34,14 +32,14 @@ def get_optimal_routes(sources, destinations):
 	sources = collections.OrderedDict([(x['id'], x) for x in sources])
 	destinations = collections.OrderedDict([(x['id'], x) for x in destinations])
 
-	sources_points = [{'lat': x['lat'], 'lng': x['lng']} for x in sources]
-	destinations_points = [{'lat': x['lat'], 'lng': x['lng']} for x in destinations]
+	sources_points = [{'lat': x['lat'], 'lng': x['lng']} for x in sources.keys()]
+	destinations_points = [{'lat': x['lat'], 'lng': x['lng']} for x in destinations.keys()]
 
-	source_ids = [x['id'] for x in sources]
-	dest_ids = [x['id'] for x in destinations]
+	source_ids = [x['id'] for x in sources.keys()]
+	dest_ids = [x['id'] for x in destinations.keys()]
 
-	demand = {x['id']: x['num_students'] for x in sources}
-	supply = {x['id']: x['num_students'] for x in destinations}
+	demand = {x['id']: x['num_students'] for x in sources.keys()}
+	supply = {x['id']: x['num_students'] for x in destinations.keys()}
 
 	log.info("Calling gmaps api...")
 	distances = gmaps.distance_matrix(origins=sources_points, destinations=destinations_points, mode='walking')
@@ -62,7 +60,7 @@ def get_optimal_routes(sources, destinations):
 	for dest in dest_ids:
 	    prob += lpSum([route_vars[source][dest] for source in source_ids]) <= supply[dest], "Students going to %s" % dest
 	for source in source_ids:
-	    prob += lpSum([route_vars[source][dest] for dest in dest_ids]) >= demand[source], "Students leaving %s"%source
+	    prob += lpSum([route_vars[source][dest] for dest in dest_ids]) == demand[source], "Students leaving %s"%source
 
 	log.info("Optimizing routes...")
 	prob.solve()
