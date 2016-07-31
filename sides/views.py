@@ -14,12 +14,6 @@ def get_optimal_routes(request):
 	    		#return HttpResponseBadRequest("No input data received")
 	        #received_json_data=json.loads(request.POST['data'])
 	        log.info(request.POST)
-	        if 'data' in request.POST:
-	        	log.info(request.POST['data'])
-	        if 'sources' not in request.POST:
-	        	return HttpResponseBadRequest("No sources")
-	        if 'destinations' not in request.POST:
-	        	return HttpResponseBadRequest("No destinations")
 
 	        result = utils.get_optimal_routes(data['sources'], (data['destinations']))
 	    	return JsonResponse(result)
